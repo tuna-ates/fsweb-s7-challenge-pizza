@@ -1,0 +1,55 @@
+.entryPage{
+    display: flex;
+    align-items:center;
+    justify-content: space-between;
+    flex-direction: column;
+    background-color: #CE2829;
+    text-align: center;
+     height: 80vh;
+   
+}
+
+.entryPage .banner{
+        width: 75vw;
+        height: 50.2vh;
+        display: flex;
+        line-height: 0px;
+        
+}
+.title{
+    padding-top: 1rem;
+    font-size: 3rem;
+    font-family: "Bebas Neue";
+    line-height: 3rem;
+    color:white ;
+}
+.button{
+    background-color: #FDC913;
+    width: 6rem;
+    color: black;
+    margin-top: .5rem;
+    border-radius: 1.5rem;
+    margin-bottom: 2rem;
+    width: 11rem;
+    font-size: 1.3rem;
+    padding: 8px;
+    border: none ;
+    font-weight:500;
+   
+}
+@media(max-width:720px){
+   .title{
+    width: 20rem;
+    height: 6rem;
+    font-size: 2rem;
+    margin: 0 1rem 1rem 1rem;
+   }
+   .button{
+    margin: 1rem;
+    width: 7rem;
+    font-size: .8rem;
+   }
+   .entryPage .banner{
+     width: 92vw;
+   }
+}    

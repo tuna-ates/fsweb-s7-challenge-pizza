@@ -1,0 +1,53 @@
+
+
+/* 
+.content{
+    display: flex;
+    flex-direction: column;
+    margin-top: 7.1rem;
+    color: #FFFFFF;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    height: 30vh;
+}
+
+.title{
+    width: 36.6rem;
+    height: 11rem;
+    font-size: 3rem;
+    font-family: "Bebas Neue";
+}
+.button{
+    background-color: #FDC913;
+    width: 6rem;
+    color: black;
+    margin-top: .5rem;
+    border-radius: 1.5rem;
+    margin-bottom: 2rem;
+    width: 11rem;
+    font-size: 1.3rem;
+    padding: 8px;
+    border: none ;
+    font-weight:500;
+   
+}
+@media(max-width:720px){
+    .logo{
+        width: 15rem;
+        margin-bottom: 1.3rem;
+    }
+   .title{
+    width: 20rem;
+    height: 6rem;
+    font-size: 2rem;
+   }
+   .button{
+    margin-bottom: 1rem;
+    width: 7rem;
+    font-size: .8rem;
+   }
+   .ansayfa .banner{
+     width: 90vw;
+   }
+}    */
