@@ -2,7 +2,7 @@
 
 import React, { Component, useState }  from 'react';
 import { Button } from 'reactstrap';
-import {useHistory} from "react-router-dom"
+import {useHistory, useParams} from "react-router-dom"
 import Banner from "../img/banner.png.png"
 import "./EntryPage.css"
 const EntryPage=()=>{
@@ -13,7 +13,7 @@ const EntryPage=()=>{
     return <div className='entryPage'>
 
       <p className='title'>KOD ACIKTIRIR <br/> PIZZA, DOYURUR</p>
-       <Button className='button' onClick={handlerClick}>ACIKTIM</Button>
+       <Button id='order-pizza' className='button' onClick={handlerClick}>ACIKTIM</Button>
        <img className='banner' src={Banner}/> 
        
     </div>

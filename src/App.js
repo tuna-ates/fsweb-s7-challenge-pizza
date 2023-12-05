@@ -6,6 +6,7 @@ import { Route } from "react-router-dom";
 import AnaSayfa from "./layoutComponents/AnaSayfa";
 import Header from './layoutComponents/Header';
 import PageBody from './layoutComponents/PageBody';
+import * as Yup from "yup"
 
 
 const App = () => {

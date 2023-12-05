@@ -9,8 +9,6 @@ const Header=()=>{
     return(
   
           <div className='header'>
-             <h1>Teknolojik Yemekler</h1>
-             <h1>Burası FOrm</h1>
              <nav className='nav'>
           <ul>
             <li>
