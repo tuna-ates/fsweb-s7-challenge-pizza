@@ -18,6 +18,8 @@
     display: flex;
     gap: 6rem;
     color: #5F5F5F;
+    align-items: center;
+    justify-content: center;
 }
 .price{
     font-size: 1.75rem;
@@ -57,7 +59,7 @@ legend{
 .checkBoxs{
     display: flex;
     flex-wrap: wrap;
-    width: 600px;
+    width: 37.5rem;
     margin-bottom: 1.5rem;
 }
 .malzemelerCheck{
@@ -69,8 +71,11 @@ legend{
 .nameContainer{
     margin-bottom: 2.5rem;
 }
+
 #special-text{
-    padding: 1rem;
+    padding: 1rem ;
+    height: 8rem;
+    width: 19rem;
 }
 .personal{
     margin-bottom: 2rem;
@@ -149,4 +154,66 @@ legend{
 .errorMassage{
     color: red;
     font-size: .9rem;
+}
+@media  (max-width: 1360px) {
+    .section{
+        display: flex;
+        flex-direction: column;
+        width: 80vw;
+        margin: auto;
+        padding: 1.9rem ;
+        
+     
+    }
+    .puan{
+        gap: 2rem;
+    }
+    .about{
+       font-size: 1.2rem;
+       margin-bottom: 2.5rem;
+    }
+    legend{
+        font-size: 1.4rem;
+        margin-bottom: .5rem;
+    }
+    .radioAndSelect{
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 2.5rem;
+    }
+    .select{
+        margin-right: 5rem;
+    }
+    .checkBoxs{
+        display: flex;
+        flex-wrap: wrap;
+        width: 100%;
+        margin-bottom: 1.5rem;
+    }
+    .malzemelerCheck{
+        margin-right: 0rem;
+        width: 7rem;
+        margin-bottom: 1rem;
+        
+     }
+     #name-input{
+        width: 19rem;
+    }
+    .endContainer{
+      flex-direction: column;
+      justify-content: start;
+    }
+
+    .miktartContainer{
+    margin-bottom: 2rem;
+     }
+     .detail{
+        width: 19rem; 
+        height: 10rem;
+    }
+    #order-button{
+        width: 19rem;
+        
+
+     }
 }

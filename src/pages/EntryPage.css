@@ -10,8 +10,8 @@
 }
 
 .entryPage .banner{
-        width: 75vw;
-        height: 50.2vh;
+        width: 70vw;
+        height: 45vh;
         display: flex;
         line-height: 0px;
         
@@ -41,15 +41,21 @@
    .title{
     width: 20rem;
     height: 6rem;
-    font-size: 2rem;
+    font-size: 2.4rem;
     margin: 0 1rem 1rem 1rem;
    }
    .button{
-    margin: 1rem;
-    width: 7rem;
-    font-size: .8rem;
+    margin: 0rem;
+    width: 10rem;
+    font-size: 1.5rem;
    }
    .entryPage .banner{
      width: 92vw;
+     height: 40vh;
    }
 }    
+@media(max-width:1360){
+    .title{
+        font-size: 5rem;
+    }
+}

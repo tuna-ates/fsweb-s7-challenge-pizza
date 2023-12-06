@@ -78,19 +78,8 @@ const Section = () => {
   const [product, setProduct] = useState(initialObject);
   const [formErrors, setFormErrors] = useState(initialObjectError);
   const [formValid, setFormValid] = useState(false);
+  
   const formSchema = Yup.object().shape({
-    // email: Yup
-    // .string()
-    // .email("Must be a valid email address.")
-    // .required("Must include email address."),
-    // password: Yup
-    // .string()
-    // .required("Password is Required")
-    // .min(6, "Passwords must be at least 6 characters long."),
-    // terms: Yup
-    // .boolean()
-    // .oneOf([true], "You must accept Terms and Conditions"),
-    // required isn't required for checkboxes.
     name: Yup.string().min(2, "İsim en az 2 karakter olmalıdır"),
     malzemeler: Yup.array().max(10, "10 dan fazla ek malzeme seçemezsiniz.").min(4," Yukarıdan en az 4 ek malzeme seçmelisiniz. "),
     size:Yup.string(),
@@ -135,9 +124,6 @@ const Section = () => {
     formSchema.isValid(product).then((valid) => setFormValid(valid));
   }, [product]);
 
-  useEffect(() => {
-    console.log("formErrors > ", formErrors)
-  }, [formErrors]);
 
   const handlerSubmit = (e) => {
     e.preventDefault();
@@ -146,7 +132,7 @@ const Section = () => {
       .post("https://reqres.in/api/users", product)
       .then((res) => {
         console.log("data:", res.data);
-         console.log("Sipariş Özeti>>>","  Pizza Adı:",res.data.name, "  Boyut:",res.data.size,"  Hamur:",res.data.dough,"  Malzemeler:",res.data.malzemeler);
+        console.log("Sipariş Özeti>>>","  Pizza Adı:",res.data.name, "  Boyut:",res.data.size,"  Hamur:",res.data.dough,"  Malzemeler:",res.data.malzemeler);
       })
       .catch((err) => {
         console.warn("eror", err.message);

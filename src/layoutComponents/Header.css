@@ -9,9 +9,9 @@
 .logo{
     width:22.5rem ;
 }
-@media(max-width:720px){
+@media(max-width:1360px){
     .logo{
-        width: 15rem;
+        width: 60%;
     }
     .MainHeader{
         padding: 0;
