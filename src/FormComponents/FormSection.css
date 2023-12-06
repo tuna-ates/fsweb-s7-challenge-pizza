@@ -1,0 +1,152 @@
+.section{
+    display: flex;
+    flex-direction: column;
+    width: 42.5vw;
+    margin-left: 29.8rem;
+    padding: 1.9rem ;
+   
+}
+.pizzaName{
+    margin-bottom: 1.5rem;
+}
+.nameAndStock{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.puan{
+    display: flex;
+    gap: 6rem;
+    color: #5F5F5F;
+}
+.price{
+    font-size: 1.75rem;
+    font-weight: bold;
+}
+.about{
+    margin-bottom: 2rem;
+    color: #5F5F5F;
+}
+legend{
+    
+    margin-bottom: 1.1rem;
+    font-weight:600;
+    font-size: 1.25rem;
+   
+}
+.yıldız{
+    color:#C20608;
+}
+.radio{
+    margin-bottom: 1rem;
+}
+.radioAndSelect{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 1rem;
+}
+.select{
+    margin-right: 8rem;
+}
+.selectBody{
+    font-weight: bold;
+    border: 2px solid black;
+    height: 2.3rem;
+    
+}
+.checkBoxs{
+    display: flex;
+    flex-wrap: wrap;
+    width: 600px;
+    margin-bottom: 1.5rem;
+}
+.malzemelerCheck{
+   margin-right: 2rem;
+   width: 10rem;
+   margin-bottom: 1rem;
+   
+}
+.nameContainer{
+    margin-bottom: 2.5rem;
+}
+#special-text{
+    padding: 1rem;
+}
+.personal{
+    margin-bottom: 2rem;
+}
+.endContainer{
+    display: flex;
+    align-items: start;
+    padding: 1rem 0;
+    
+}
+.miktartContainer{
+    display: flex;
+    flex: 1;
+    align-items: center;
+}
+.miktartContainer Button{
+    padding: 1rem 1.2rem;
+    background-color: #FDC913;
+    color: black;
+    border: none;
+    
+}
+.miktarBtn1{
+    border-radius: .5rem 0 0 .5rem;
+}
+.miktarBtn2{
+    border-radius: 0 .5rem .5rem 0;
+}
+.miktartContainer div{
+    padding: 1rem 1.2rem;
+    border: 1px solid #D9D9D9;
+    
+}
+.detailContainer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.detail1{
+    display: flex;
+    justify-content: space-between;
+    font-size: 1.1rem;
+    color: #5F5F5F;
+    font-weight: 500;
+}
+.detail2{
+    display: flex;
+    justify-content: space-between;
+    font-size: 1.1rem;
+    color: #CE2829;
+    font-weight: 500;
+   
+}
+.detail{
+    border: 2px solid #D9D9D9;
+    padding: 2rem;
+    flex-grow: 1;
+    width: 24.1rem;
+    height: 12.3rem;
+    border-radius: .4rem;
+}
+.titleTotal{
+    font-size: 1.25rem;
+    font-weight: 600;
+}
+#order-button{
+   width: 24.25rem;
+   padding: 1rem 0;
+   font-size: 1.2rem;
+   color: black;
+   background-color: #FDC913;
+   border: none;
+   font-weight: 600;
+}
+.errorMassage{
+    color: red;
+    font-size: .9rem;
+}

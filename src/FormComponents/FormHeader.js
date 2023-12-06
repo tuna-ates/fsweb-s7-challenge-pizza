@@ -3,8 +3,8 @@ import { Route, Router, Switch } from 'react-router-dom';
 import { Link } from 'react-router-dom/';
 import App from '../App';
 import Form from '../pages/Form';
-
-const Header=()=>{
+import "./FormHeader.css"
+const FormHeader=()=>{
 
     return(
   
@@ -12,13 +12,10 @@ const Header=()=>{
              <nav className='nav'>
           <ul>
             <li>
-              <Link to="/">Ansayfa</Link>
+              <Link  className='navLink' to="/">Ansayfa</Link>
             </li>
             <li>
-              <Link to="/about">Seçenekler</Link>
-            </li>
-            <li>
-              <Link to="/pizza" >Sipariş Oluştur</Link>
+              <Link className='navLink' to="/pizza" >Sipariş Oluştur</Link>
             </li>
           </ul>
         </nav>
@@ -26,4 +23,4 @@ const Header=()=>{
          
     ); 
 }
-export default Header;
+export default FormHeader;

@@ -1,4 +1,4 @@
-
+import "./fonts/Barlow/Barlow-Black.ttf";
 import React from "react";
 import ReactDOM from "react-dom";
 import "./index.css";
