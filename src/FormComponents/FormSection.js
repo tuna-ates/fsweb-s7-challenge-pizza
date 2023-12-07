@@ -10,6 +10,7 @@ import {
   Input,
   Label,
 } from "reactstrap";
+import { useHistory } from "react-router-dom";
 const boyut = ["Küçük", "Orta", "Büyük"];
 const dougthType = ["Kalın", "Normal", "İnce"];
 
@@ -78,7 +79,7 @@ const Section = () => {
   const [product, setProduct] = useState(initialObject);
   const [formErrors, setFormErrors] = useState(initialObjectError);
   const [formValid, setFormValid] = useState(false);
-  
+  const history=useHistory()
   const formSchema = Yup.object().shape({
     name: Yup.string().min(2, "İsim en az 2 karakter olmalıdır"),
     malzemeler: Yup.array().max(10, "10 dan fazla ek malzeme seçemezsiniz.").min(4," Yukarıdan en az 4 ek malzeme seçmelisiniz. "),
@@ -120,7 +121,7 @@ const Section = () => {
   };
 
   useEffect(() => {
-    console.log("product form data > ", product)
+    //console.log("product form data > ", product)
     formSchema.isValid(product).then((valid) => setFormValid(valid));
   }, [product]);
 
@@ -137,7 +138,7 @@ const Section = () => {
       .catch((err) => {
         console.warn("eror", err.message);
       });
-     
+      history.push("/result")
   };
    
   return (
@@ -223,6 +224,7 @@ const Section = () => {
                   checked={product.malzemeler.includes(item)}
                   onChange={handlerChange}
                   type="checkbox"
+                  data-cy={"checkbox"+index}
                 />
                 <Label check>{item}</Label>
               </FormGroup>
@@ -275,7 +277,7 @@ const Section = () => {
                   <div className="detail1"> <p>Seçimler</p> <p>25.00₺</p></div>
                   <div className="detail2"> <p>Toplam</p> <p>110.50₺</p></div>
               </div>
-              <Button id="order-button" onSubmit={handlerSubmit} disabled={!formValid}>
+              <Button id="order-button" data-cy="submit" onSubmit={handlerSubmit} disabled={!formValid}>
               Sipariş Ver
              </Button>
            </div>
