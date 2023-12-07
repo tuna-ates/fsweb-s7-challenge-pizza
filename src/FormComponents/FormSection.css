@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@100&family=Bebas+Neue&family=Quattrocento&display=swap');@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@100&family=Bebas+Neue&family=Quattrocento&display=swap');
+
+
 .section{
     display: flex;
     flex-direction: column;
@@ -8,6 +11,10 @@
 }
 .pizzaName{
     margin-bottom: 1.5rem;
+    font-weight: 600;
+    font-family: "Barlow" serif;
+    font-size: 20px;
+
 }
 .nameAndStock{
     display: flex;
@@ -28,12 +35,14 @@
 .about{
     margin-bottom: 2rem;
     color: #5F5F5F;
+    line-height: 1.8rem;
 }
 legend{
     
     margin-bottom: 1.1rem;
     font-weight:600;
     font-size: 1.25rem;
+    font-family: "Barlow" serif;
    
 }
 .yıldız{
@@ -74,8 +83,7 @@ legend{
 
 #special-text{
     padding: 1rem ;
-    height: 8rem;
-    width: 19rem;
+  
 }
 .personal{
     margin-bottom: 2rem;
@@ -137,6 +145,8 @@ legend{
     width: 24.1rem;
     height: 12.3rem;
     border-radius: .4rem;
+   
+    font-weight: 600;
 }
 .titleTotal{
     font-size: 1.25rem;
@@ -150,6 +160,7 @@ legend{
    background-color: #FDC913;
    border: none;
    font-weight: 600;
+   font-family: "Barlow",serif;
 }
 .errorMassage{
     color: red;
@@ -197,7 +208,11 @@ legend{
         
      }
      #name-input{
-        width: 19rem;
+        width: 100%;
+    }
+    #special-text{
+        width: 100%;
+        padding: 1rem 1.2rem;
     }
     .endContainer{
       flex-direction: column;

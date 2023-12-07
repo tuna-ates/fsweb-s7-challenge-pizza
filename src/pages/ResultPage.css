@@ -10,7 +10,7 @@
     align-items: center;
     justify-content: center;
 }
-p{
+h1{
     width: 37.7rem;
     height: 12.18rem;
     font-size: 4rem;
@@ -20,4 +20,9 @@ p{
     font-family: 'Barlow', serif;
     font-weight: 400;
     
+}
+@media(max-width:720px){
+    h1{
+        width: 80%;
+    }
 }

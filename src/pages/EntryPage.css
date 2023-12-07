@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@100&family=Bebas+Neue&family=Quattrocento&display=swap');
+
 .entryPage{
     display: flex;
     align-items:center;
@@ -20,8 +22,11 @@
     padding-top: 1rem;
     font-size: 3rem;
     font-family: "Bebas Neue";
-    line-height: 3rem;
+    line-height: 3.5rem;
     color:white ;
+      font-family: 'Barlow', sans-serif;  
+    
+    font-weight: 600;
 }
 .button{
     background-color: #FDC913;

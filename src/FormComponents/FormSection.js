@@ -133,7 +133,8 @@ const Section = () => {
       .post("https://reqres.in/api/users", product)
       .then((res) => {
         console.log("data:", res.data);
-        console.log("Sipariş Özeti>>>","  Pizza Adı:",res.data.name, "  Boyut:",res.data.size,"  Hamur:",res.data.dough,"  Malzemeler:",res.data.malzemeler);
+        console.log("<<<<<<<<<<<<Sipariş Özeti>>>>>>>>>>", "  Pizza Adı:",res.data.name,"  Boyut:",res.data.size,
+        "  Hamur:",res.data.dough,"  Malzemeler:",res.data.malzemeler," Notlar:",res.data.personal);
       })
       .catch((err) => {
         console.warn("eror", err.message);
@@ -168,15 +169,16 @@ const Section = () => {
               Boyut Seç <span className="yıldız">*</span>
             </legend>
 
-            {boyut.map((item) => {
+            {boyut.map((item,index) => {
               return (
-                <FormGroup check>
+                <FormGroup  key={index} check>
                   <Input
                     name="size"
                     type="radio"
                     id="size-radio"
                     value={item}
                     onChange={handlerChange}
+                   
                   />{" "}
                   <Label className="radio" check>
                     {item}
@@ -201,8 +203,8 @@ const Section = () => {
               <option value={""} disabled>
                 Hamur Kalınlığı
               </option>
-              {dougthType.map((item) => {
-                return <option>{item}</option>;
+              {dougthType.map((item,index) => {
+                return <option key={index}>{item}</option>;
               })}
             </Input>
           </div>
